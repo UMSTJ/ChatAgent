@@ -1,0 +1,171 @@
+/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:15: Warning: WRITE_EXTERNAL_STORAGE no longer provides write access when targeting Android 10+ [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+/home/noob-nuc/tang/AIAgent/app/src/main/java/com/aiagent/assistant/overlay/AssistantOverlay.kt:20: Warning: Field requires API level 26 (current min is 24): android.view.WindowManager.LayoutParams#TYPE_APPLICATION_OVERLAY [InlinedApi]
+        type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "InlinedApi":
+   This check scans through all the Android API field references in the
+   application and flags certain constants, such as static final integers and
+   Strings, which were introduced in later versions. These will actually be
+   copied into the class files rather than being referenced, which means that
+   the value is available even when running on older devices. In some cases
+   that's fine, and in other cases it can result in a runtime crash or
+   incorrect behavior. It depends on the context, so consider the code
+   carefully and decide whether it's safe and can be suppressed or whether the
+   code needs to be guarded.
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+/home/noob-nuc/tang/AIAgent/app/src/main/java/com/aiagent/assistant/overlay/AssistantOverlay.kt:15: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+    private val overlayView: View = LayoutInflater.from(context).inflate(R.layout.overlay_assistant, null)
+                                                                                                     ~~~~
+
+   Explanation for issues of type "InflateParams":
+   When inflating a layout, avoid passing in null as the parent view, since
+   otherwise any layout parameters on the root of the inflated layout will be
+   ignored.
+
+   https://www.bignerdranch.com/blog/understanding-androids-layoutinflater-inflate/
+
+/home/noob-nuc/tang/AIAgent/app/build.gradle:46: Warning: A newer version of androidx.core:core-ktx than 1.10.1 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.10.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:47: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:48: Warning: A newer version of com.google.android.material:material than 1.9.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.9.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:49: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:52: Warning: A newer version of com.google.mlkit:text-recognition than 16.0.0 is available: 16.0.1 [GradleDependency]
+    implementation 'com.google.mlkit:text-recognition:16.0.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:53: Warning: A newer version of com.google.mlkit:text-recognition-chinese than 16.0.0 is available: 16.0.1 [GradleDependency]
+    implementation 'com.google.mlkit:text-recognition-chinese:16.0.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:60: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.1 is available: 2.9.2 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:64: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/build.gradle:65: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/noob-nuc/tang/AIAgent/app/src/main/res/values/xunfei_config.xml:7: Warning: The resource R.array.iat_language_entries appears to be unused [UnusedResources]
+    <string-array name="iat_language_entries">
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/values/xunfei_config.xml:11: Warning: The resource R.array.iat_language_values appears to be unused [UnusedResources]
+    <string-array name="iat_language_values">
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/values/xunfei_config.xml:15: Warning: The resource R.array.accent_entries appears to be unused [UnusedResources]
+    <string-array name="accent_entries">
+                  ~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/values/xunfei_config.xml:21: Warning: The resource R.array.accent_values appears to be unused [UnusedResources]
+    <string-array name="accent_values">
+                  ~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/values/xunfei_config.xml:28: Warning: The resource R.array.voicer_cloud_entries appears to be unused [UnusedResources]
+    <string-array name="voicer_cloud_entries">
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/values/xunfei_config.xml:35: Warning: The resource R.array.voicer_cloud_values appears to be unused [UnusedResources]
+    <string-array name="voicer_cloud_values">
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/home/noob-nuc/tang/AIAgent/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+/home/noob-nuc/tang/AIAgent/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+/home/noob-nuc/tang/AIAgent/app/src/main/res/layout/activity_main.xml:11: Warning: Hardcoded string "准备就绪", should use @string resource [HardcodedText]
+        android:text="准备就绪"
+        ~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/layout/activity_main.xml:22: Warning: Hardcoded string "启动助手", should use @string resource [HardcodedText]
+        android:text="启动助手"
+        ~~~~~~~~~~~~~~~~~~~
+/home/noob-nuc/tang/AIAgent/app/src/main/res/layout/overlay_assistant.xml:14: Warning: Hardcoded string "AI助手正在运行", should use @string resource [HardcodedText]
+        android:text="AI助手正在运行"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 23 warnings

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 请将这里的 APPID 替换为您在科大讯飞开放平台申请的 APPID -->
+    <string name="xunfei_app_id">cc921206</string>
+    
+    <!-- 语音识别配置 -->
+    <string-array name="iat_language_entries">
+        <item>中文</item>
+    </string-array>
+    
+    <string-array name="iat_language_values">
+        <item>zh_cn</item>
+    </string-array>
+    
+    <string-array name="accent_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+    </string-array>
+    
+    <string-array name="accent_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>lmz</item>
+    </string-array>
+    
+    <!-- 语音合成配置 -->
+    <string-array name="voicer_cloud_entries">
+        <item>讯飞小燕—女声</item>
+        <item>讯飞许久—男声</item>
+        <item>讯飞小萍—女声</item>
+        <item>讯飞小婧—女声</item>
+    </string-array>
+    
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiujiu</item>
+        <item>xiaoping</item>
+        <item>xiaojing</item>
+    </string-array>
+</resources>

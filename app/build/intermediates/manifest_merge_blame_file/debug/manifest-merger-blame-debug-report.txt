@@ -1,0 +1,260 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aiagent.assistant"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:4:5-71
+11-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:4:22-68
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:5:5-67
+12-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:6:5-78
+13-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:6:22-75
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:7:5-77
+14-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+15-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:8:5-94
+15-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:8:22-91
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+16-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:9:5-88
+16-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:9:22-85
+17    <!-- 科大讯飞SDK所需权限 -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:11:5-79
+18-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:12:5-76
+19-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:12:22-73
+20    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+20-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:13:5-79
+20-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:13:22-76
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:14:5-80
+21-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:14:22-77
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:15:5-81
+22-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:15:22-78
+23
+24    <permission
+24-->[androidx.core:core:1.10.1] /home/noob-nuc/.gradle/caches/transforms-3/fc1eab2c92af107f4536e9662675d29c/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+25        android:name="com.aiagent.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.10.1] /home/noob-nuc/.gradle/caches/transforms-3/fc1eab2c92af107f4536e9662675d29c/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.10.1] /home/noob-nuc/.gradle/caches/transforms-3/fc1eab2c92af107f4536e9662675d29c/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.aiagent.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.10.1] /home/noob-nuc/.gradle/caches/transforms-3/fc1eab2c92af107f4536e9662675d29c/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.10.1] /home/noob-nuc/.gradle/caches/transforms-3/fc1eab2c92af107f4536e9662675d29c/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:17:5-40:19
+31        android:name="com.aiagent.assistant.AIApplication"
+31-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:18:9-38
+32        android:allowBackup="true"
+32-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:19:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.10.1] /home/noob-nuc/.gradle/caches/transforms-3/fc1eab2c92af107f4536e9662675d29c/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher"
+36-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:20:9-43
+37        android:label="@string/app_name"
+37-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:21:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:22:9-54
+39        android:supportsRtl="true"
+39-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:23:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.AIAgent" >
+41-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:24:9-45
+42        <activity
+42-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:26:9-33:20
+43            android:name="com.aiagent.assistant.MainActivity"
+43-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:27:13-41
+44            android:exported="true" >
+44-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:28:13-36
+45            <intent-filter>
+45-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:29:13-32:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:30:17-69
+46-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:30:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:31:17-77
+48-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:31:27-74
+49            </intent-filter>
+50        </activity>
+51
+52        <service
+52-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:35:9-39:74
+53            android:name="com.aiagent.assistant.service.AssistantService"
+53-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:36:13-53
+54            android:enabled="true"
+54-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:37:13-35
+55            android:exported="false"
+55-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:38:13-37
+56            android:foregroundServiceType="microphone|mediaProjection" />
+56-->/home/noob-nuc/tang/AIAgent/app/src/main/AndroidManifest.xml:39:13-71
+57        <service
+57-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/noob-nuc/.gradle/caches/transforms-3/1b84b0b0a05f74447a9f51c93a81d182/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:9:9-15:19
+58            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+58-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/noob-nuc/.gradle/caches/transforms-3/1b84b0b0a05f74447a9f51c93a81d182/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:10:13-91
+59            android:directBootAware="true"
+59-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:17:13-43
+60            android:exported="false" >
+60-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/noob-nuc/.gradle/caches/transforms-3/1b84b0b0a05f74447a9f51c93a81d182/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:11:13-37
+61            <meta-data
+61-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/noob-nuc/.gradle/caches/transforms-3/1b84b0b0a05f74447a9f51c93a81d182/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:12:13-14:85
+62                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+62-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/noob-nuc/.gradle/caches/transforms-3/1b84b0b0a05f74447a9f51c93a81d182/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:13:17-114
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/noob-nuc/.gradle/caches/transforms-3/1b84b0b0a05f74447a9f51c93a81d182/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:14:17-82
+64            <meta-data
+64-->[com.google.mlkit:vision-common:17.3.0] /home/noob-nuc/.gradle/caches/transforms-3/08601f3fbbbd6d97f14fd7c3342f3b84/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+65                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+65-->[com.google.mlkit:vision-common:17.3.0] /home/noob-nuc/.gradle/caches/transforms-3/08601f3fbbbd6d97f14fd7c3342f3b84/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:13:17-124
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.mlkit:vision-common:17.3.0] /home/noob-nuc/.gradle/caches/transforms-3/08601f3fbbbd6d97f14fd7c3342f3b84/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:14:17-82
+67            <meta-data
+67-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:20:13-22:85
+68                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+68-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:21:17-120
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:22:17-82
+70        </service>
+71
+72        <provider
+72-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:9:9-13:38
+73            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+73-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:10:13-78
+74            android:authorities="com.aiagent.assistant.mlkitinitprovider"
+74-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:11:13-69
+75            android:exported="false"
+75-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:12:13-37
+76            android:initOrder="99" />
+76-->[com.google.mlkit:common:18.8.0] /home/noob-nuc/.gradle/caches/transforms-3/0fc4f18767e2bb3eed19370139377e7d/transformed/jetified-common-18.8.0/AndroidManifest.xml:13:13-35
+77
+78        <activity
+78-->[com.google.android.gms:play-services-base:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/6bbdcd62b4c9d89b6cffd81bbd2a80eb/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+79-->[com.google.android.gms:play-services-base:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/6bbdcd62b4c9d89b6cffd81bbd2a80eb/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+80            android:exported="false"
+80-->[com.google.android.gms:play-services-base:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/6bbdcd62b4c9d89b6cffd81bbd2a80eb/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+81-->[com.google.android.gms:play-services-base:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/6bbdcd62b4c9d89b6cffd81bbd2a80eb/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+82
+83        <meta-data
+83-->[com.google.android.gms:play-services-basement:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/24922d5552c19d483aac0bd5711cd503/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+84            android:name="com.google.android.gms.version"
+84-->[com.google.android.gms:play-services-basement:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/24922d5552c19d483aac0bd5711cd503/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+85            android:value="@integer/google_play_services_version" />
+85-->[com.google.android.gms:play-services-basement:18.1.0] /home/noob-nuc/.gradle/caches/transforms-3/24922d5552c19d483aac0bd5711cd503/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+89            android:authorities="com.aiagent.assistant.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.2.0] /home/noob-nuc/.gradle/caches/transforms-3/05485d74f6e4668fc2b95139b6291979/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/noob-nuc/.gradle/caches/transforms-3/0f7b006b3ab25aa716af805800e7f64b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/noob-nuc/.gradle/caches/transforms-3/0f7b006b3ab25aa716af805800e7f64b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+96                android:value="androidx.startup" />
+96-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/noob-nuc/.gradle/caches/transforms-3/0f7b006b3ab25aa716af805800e7f64b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+97            <meta-data
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+99                android:value="androidx.startup" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+100        </provider>
+101
+102        <receiver
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+103            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+104            android:directBootAware="false"
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+105            android:enabled="true"
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+106            android:exported="true"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+107            android:permission="android.permission.DUMP" >
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+109                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+112                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+115                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+118                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/noob-nuc/.gradle/caches/transforms-3/4e35cdc9624102c6bcca20ad352636ee/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+119            </intent-filter>
+120        </receiver>
+121
+122        <service
+122-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/noob-nuc/.gradle/caches/transforms-3/c654ab22158de3d8c7ec4bac3226e3cb/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+123            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/noob-nuc/.gradle/caches/transforms-3/c654ab22158de3d8c7ec4bac3226e3cb/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+124            android:exported="false" >
+124-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/noob-nuc/.gradle/caches/transforms-3/c654ab22158de3d8c7ec4bac3226e3cb/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+125            <meta-data
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/noob-nuc/.gradle/caches/transforms-3/c654ab22158de3d8c7ec4bac3226e3cb/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+126                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/noob-nuc/.gradle/caches/transforms-3/c654ab22158de3d8c7ec4bac3226e3cb/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+127                android:value="cct" />
+127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/noob-nuc/.gradle/caches/transforms-3/c654ab22158de3d8c7ec4bac3226e3cb/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+128        </service>
+129        <service
+129-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+130            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+130-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+131            android:exported="false"
+131-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+132            android:permission="android.permission.BIND_JOB_SERVICE" >
+132-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+133        </service>
+134
+135        <receiver
+135-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+136            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+136-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+137            android:exported="false" />
+137-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/noob-nuc/.gradle/caches/transforms-3/33cd8567cf039e3e045960382893db58/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+138    </application>
+139
+140</manifest>

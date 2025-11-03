@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.aiagent.assistant.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.aiagent.assistant.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.aiagent.assistant.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.aiagent.assistant.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.aiagent.assistant.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.aiagent.assistant.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.aiagent.assistant.app-merged_res-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.aiagent.assistant.app-main-37:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.aiagent.assistant.app-merged_res-35:/drawable_overlay_background.xml.flat",
+        "source": "com.aiagent.assistant.app-main-37:/drawable/overlay_background.xml"
+    },
+    {
+        "merged": "com.aiagent.assistant.app-merged_res-35:/layout_overlay_assistant.xml.flat",
+        "source": "com.aiagent.assistant.app-main-37:/layout/overlay_assistant.xml"
+    }
+]
